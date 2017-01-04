@@ -1,0 +1,10 @@
+<%= form_tag ({controller: 'products',
+    action: 'add',
+    method: 'post'}) do %>
+
+  <input name=product>
+  <input type=submit value='add to cart'>
+<% end %>
+
+<%= @cart.join ', ' %>
+<!-- action in form is always to url or path_helper (which returns a url). Follow URL in your routes -->
